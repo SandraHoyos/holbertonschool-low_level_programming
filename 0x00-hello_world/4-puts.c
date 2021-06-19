@@ -10,6 +10,7 @@
  */
 /**
  * main - Función principal del programa
+ * Return: Alwais 0 (Success)
  */
 int main(void)
 {

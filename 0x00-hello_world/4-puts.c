@@ -2,15 +2,13 @@
  * File: 4-puts-c
  * Sandra Lorena Hoyos
  */
-
 #include <stdio.h>
-
 /*
  * main - Prints a message on screen
  *
  * Return: Always 0 (Success)
  */
-int main(void)
+int main(void)/*comentario de prueba*/
 /*
  * función principal que escribe un mensage en pantalla
  *

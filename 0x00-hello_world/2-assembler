@@ -1,2 +1,2 @@
 #!/bin/bashs
-gcc -c $CFILE > c.s
+gcc -c $CFILE > main.s

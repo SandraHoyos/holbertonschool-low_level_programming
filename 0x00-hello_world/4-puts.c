@@ -4,7 +4,7 @@
  */
 #include <stdio.h>
 /*
- * main - Prints a message on screen
+ *int main(void)- Prints a message on screen
  *
  * Return: Always 0 (Success)
  */

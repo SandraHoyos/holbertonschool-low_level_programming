@@ -1,2 +1,2 @@
 #!/bin/bashs
-gcc -S $CFILE
+gcc -S $CFILE > c.s

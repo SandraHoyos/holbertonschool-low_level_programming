@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-
+  int i=0;
   char cadena[10]="Holberton\n";
-  for(int i=0;i<=10;i++)
+  for(i=0;i<=10;i++)
     {
       _putchar(cadena[i]);
     }
-  return (0)
+  return (0);
 }

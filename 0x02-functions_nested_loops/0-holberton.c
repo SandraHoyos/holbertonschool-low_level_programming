@@ -14,6 +14,7 @@ char cadena[] = "Holberton\n";
 while ( i <= 9 )
 {
 _putchar( cadena[i] );
+ i++; 
 }  
 return (0);
 }

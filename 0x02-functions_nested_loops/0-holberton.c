@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-int i=0;
+int i = 0;
 char cadena[] = "Holberton\n";
 
-while ( i <= 9 )
+while (i <= 9)
 {
-_putchar( cadena[i] );
- i++; 
-}  
+_putchar(cadena[i]);
+i++;
+}
 return (0);
 }

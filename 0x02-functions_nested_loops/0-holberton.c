@@ -8,9 +8,9 @@
  */
 int main(void) {
 
-char cadena[9] = "Holberton\n";
+char cadena[] = "Holberton\n";
 
-for( int i = 0;i <= 9; i++ )
+while ( i <= 9 )
 {
 _putchar( cadena[i] );
 }  

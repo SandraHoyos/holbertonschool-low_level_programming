@@ -11,11 +11,12 @@ int main(void)
   int i=0;
   char c;
   char cadena[]="Holberton\n";
-  while (i<=9)
-    {
+  
+  while (i <= 9)
+  {
       c=cadena[i];
       _putchar(c);
       i++;
-    }
+  }
   return (0);
 }

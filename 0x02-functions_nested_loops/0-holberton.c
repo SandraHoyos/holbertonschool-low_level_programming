@@ -6,17 +6,13 @@
  * Return: On success 0.
  *
  */
-int main(void)
+int main(void) {
+
+char cadena[9] = "Holberton\n";
+
+for( int i = 0;i <= 9; i++ )
 {
-  int i=0;
-  char c;
-  char cadena[]="Holberton\n";
-  
-  while (i <= 9)
-  {
-      c=cadena[i];
-      _putchar(c);
-      i++;
-  }
-  return (0);
+  _putchar( cadena[i] );
+}  
+  return 0;
 }

@@ -9,7 +9,7 @@
 int main(void)
 {
   int i=0;
-  char c="";
+  char c;
   char cadena[10]="Holberton\n";
   for(i=0;i<=10;i++)
     {

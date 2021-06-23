@@ -12,7 +12,7 @@ char cadena[9] = "Holberton\n";
 
 for( int i = 0;i <= 9; i++ )
 {
-  _putchar( cadena[i] );
+_putchar( cadena[i] );
 }  
-  return 0;
+return (0);
 }

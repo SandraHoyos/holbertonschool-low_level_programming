@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - Prints "alphabet\n" string
+ * print_alphabet - Prints "alphabet\n" string
  *
  *
  * Return: void.
@@ -13,5 +13,5 @@ for (letra = 'a'; letra <= 'z'; letra++)
 {
 _putchar(letra);
 }
-  _putchar('\n');
+_putchar('\n');
 }

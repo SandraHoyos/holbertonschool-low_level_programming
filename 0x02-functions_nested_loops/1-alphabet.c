@@ -3,15 +3,15 @@
  * main - Prints "alphabet\n" string
  *
  *
- * Return: On success 0.
+ * Return: void.
  *
  */
-int main(void)
+void print_alphabet(void)
 {
   char letra;
   for (letra = 'a'; letra <= 'z'; letra++)
     {
       _putchar(letra);
     }
-  return (0);
+  _putchar("\n");
 }

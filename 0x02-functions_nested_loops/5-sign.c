@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * print _sign - funcion that prints of a number
+ * print_sign - funcion that prints of a number
  * @n:caracter to check
  *
  *

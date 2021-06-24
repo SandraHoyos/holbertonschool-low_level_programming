@@ -6,9 +6,7 @@
  * Return: int.
  *
  */
-int _islowerintc(int c); #include "holberton.h"
-
-
+int _islowerintc(int c) 
 {
 if (c >= 'a' && c<= 'z')
 return (1);

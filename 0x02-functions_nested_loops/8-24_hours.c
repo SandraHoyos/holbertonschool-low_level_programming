@@ -2,7 +2,7 @@
 
 /**
  *
- * jack_bauer - - function that print Jack Bauer every minute
+ * jack_bauer - function that print Jack Bauer every minute
  *
  * Return: void
  */
@@ -25,4 +25,3 @@ void jack_bauer(void)
 
     }
 }
-8-24_hours.c

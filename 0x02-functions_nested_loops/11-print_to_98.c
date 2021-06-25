@@ -15,7 +15,7 @@ if (number < 98)
 number++;
 else
 {
-n--
+number--;
 }
 }
 }

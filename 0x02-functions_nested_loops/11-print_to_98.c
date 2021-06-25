@@ -8,9 +8,9 @@
 
 void print_to_98(int number)
 {
-while ( number != 98)
+while (number != 98)
 {
-printf("%i, ",number);
+printf("%i, ", number);
 if (number < 98)
 number++;
 else

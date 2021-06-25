@@ -11,11 +11,12 @@ void print_to_98(int number)
 while ( number != 98)
 {
 printf("%i, ",number);
-if (number <= 98)
+if (number < 98)
 number++;
 else
 {
 number--;
 }
 }
+printf("98\n");
 }

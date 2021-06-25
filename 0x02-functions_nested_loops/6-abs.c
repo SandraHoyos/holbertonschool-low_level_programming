@@ -10,7 +10,7 @@ int _abs(int numero)
 if (numero < 0)
 {
 numero *= -1;
-return (numero);     
+return (numero);    
 }
 else
 {

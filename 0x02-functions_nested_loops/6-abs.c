@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* _abs(int) - function the absolute value.
+* _abs - function the absolute value.
 * @numero: value absolute
 *
 * Return: n

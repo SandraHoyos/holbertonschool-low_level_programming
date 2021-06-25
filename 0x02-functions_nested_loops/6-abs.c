@@ -14,6 +14,6 @@ return(numero);
 }
 else
 {
-return(numero):
+return(numero);
 }
 }

@@ -7,7 +7,7 @@
  */
 int _isdigit(int caracter)
 {
-if (c >= '0' && c <= '9')
+if (caracter >= '0' && caracter <= '9')
 return (1);
 else
 return (0);

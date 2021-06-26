@@ -3,9 +3,9 @@
  * mul - Multiplica dos enteros
  *  variable caracter para revisar si es digito
  *
- * Return: void
+ * Return: multiplicación de a y b
  */
 int mul(int a, int b)
 {
-printf ( "%d\n", a*b);
+return(a * b);
 }

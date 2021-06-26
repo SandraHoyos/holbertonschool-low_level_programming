@@ -3,12 +3,12 @@
  * more_numbers - prints 01234567891011121314\n x10
  *
  * @a, @b, @c, @i variables
+ *
  * Return: void
  */
 void more_numbers(void)
 {
 char a, b, c, i;
-
 for (i = 0; i < 10; i++)
 {
 for (c = 0; c <= 14; c++)
@@ -23,6 +23,6 @@ _putchar('0' + a);
 }
 _putchar('0' + b);
 }
- _putchar('\n');
+_putchar('\n');
 }
 }

@@ -2,11 +2,11 @@
 /**
  * more_numbers - prints 01234567891011121314\n x10
  *
+ * @a, @b, @c, @i variables
  * Return: void
  */
 void more_numbers(void)
 {
-
 char a, b, c, i;
 
 for (i = 0; i < 10; i++)
@@ -21,6 +21,6 @@ a = c / 10; b = c % 10;
 _putchar('0' + a);
 }
 _putchar('0' + b);
-} 
 }
-} 
+}
+}

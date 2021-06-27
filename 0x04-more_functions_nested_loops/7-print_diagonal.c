@@ -21,6 +21,4 @@ _putchar(92);
 _putchar('\n');
 }
 }
-else
-putchar('\n');
 }

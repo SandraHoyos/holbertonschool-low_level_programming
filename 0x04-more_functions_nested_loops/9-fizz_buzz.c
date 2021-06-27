@@ -4,7 +4,7 @@
 /**
  * main - Programa that prints the numbers from 1 to 100
  *
- * @size: length of square
+ * @i: index
  *
  * Return: void
  */
@@ -27,7 +27,6 @@ printf("Fizz");
 }
 else if (i== 0)
 {
-
 }
 else
 {

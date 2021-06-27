@@ -2,7 +2,7 @@
 /**
  * print_line - prints a line of n _ with putchar
  *
- * @n, @i variable tamaño de linea
+ * @n: variable tamaño de linea
  *
  * Return: void
  */
@@ -13,8 +13,8 @@ if (n >= 0)
 {
 for (i = 0; i < n; i++)
 {
-_putchar( 95 );
+_putchar(95);
 }
 }
-_putchar( '\n' );
+_putchar('\n');
 }

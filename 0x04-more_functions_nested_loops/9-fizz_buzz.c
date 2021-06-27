@@ -35,7 +35,7 @@ for(i = 0; i < 100; i++)
 	{
 	  printf("%i", i);
 	}
-      print(" ");
+      printf(" ");
     }
   printf("\n");
   return 0;

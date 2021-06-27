@@ -1,9 +1,8 @@
 #include "holberton.h"
-
 /**
  * print_line - prints a line
  *
- * @n, @i: variable tamaño de linea
+ * @n, @i variable tamaño de linea
  *
  * Return: void
  */

@@ -4,7 +4,7 @@
  *
  * @a: variables to exchange
  * @b: variables to exchange
- * @c: variables to exchange
+ * 
  *
  * Return: void
  */

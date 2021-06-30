@@ -1,11 +1,11 @@
 #include "holberton.h"
 
 /**
- * reset_to_98 - function tht tekes a pointer to an integer and uddates the value to 98
+ * reset_to_98 - function tht tekes a pointer to an integer
  *
  * @n: int  pointer
  *
- * Return: void 
+ * Return: void
  */
 void reset_to_98(int *n)
 {

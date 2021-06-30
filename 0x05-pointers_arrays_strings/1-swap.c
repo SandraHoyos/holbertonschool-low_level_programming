@@ -2,7 +2,9 @@
 /**
  * swap_int - funtion that values of two integers
  *
- * @*a, @*b, @c: variables to exchange
+ * @a: variables to exchange
+ * @b: variables to exchange
+ * @c: variables to exchange
  *
  * Return: void
  */

@@ -14,6 +14,6 @@ int l;
 {
       
 }
-return (strlen(l));
+return (l);
 }
 

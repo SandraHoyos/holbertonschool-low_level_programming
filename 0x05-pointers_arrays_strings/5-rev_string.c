@@ -15,7 +15,7 @@ for (lon = 0; s[lon] != '\0'; lon++)
 }
 for (i = lon ; i >= 0; i--)
 {
-cadena[j] = s[i-1];
+cadena[j] = s[i];
 j++;
 }
 for (i = 0; i <= lon; i++)

@@ -13,7 +13,7 @@ if (i % 2 == 0)
 mitad = i / 2;
 else
 mitad = (i + 1) / 2;
-for (j = mitad; j <= i; j++)
+for (j = mitad; j < i; j++)
 {
 putchar(str[j]);
 }

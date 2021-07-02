@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 int lon, i, j = 0;
-char cadena[100];
+char cadena[500];
 
 for (lon = 0; s[lon] != '\0'; lon++)
 {

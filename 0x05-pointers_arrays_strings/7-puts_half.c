@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * puts2 - Prints out every other char of the string.
+ * puts_half - prints half od string
  * @str: input string to print.
  */
 void puts_half(char *str)
@@ -12,7 +12,7 @@ i++;
 if (i % 2 == 0)
 mitad = (i - 1) / 2;
 else
-mitad = (i + 1) / 2;
+mitad = (i - 1) / 2;
 for (j = mitad; j <= i; j++)
 {
 putchar(str[j]);

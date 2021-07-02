@@ -17,7 +17,6 @@ for (i = lon; i >= 0; i--)
 {
 
 c[j] = s[i];
-
 j++;
 }
 for (i = 0; i < lon; i++)

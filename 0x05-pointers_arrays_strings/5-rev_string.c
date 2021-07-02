@@ -8,20 +8,16 @@
 void rev_string(char *s)
 {
 int lon, i, j = 0;
-char cadena[500];
+char c;
 
 for (lon = 0; s[lon] != '\0'; lon++)
 {
 }
-for (i = lon - 1 ; i >= 0; i--)
+for (i = lon; i >= 0; i--)
 {
-cadena[j] = s[i];
+c = s[i];
+s[i] = s[j];
 j++;
 }
-for (i = 0; i <= lon; i++)
-{
-s[i] = cadena[i];
-putchar(s[i]);
-}
-putchar('\n');
+
 }

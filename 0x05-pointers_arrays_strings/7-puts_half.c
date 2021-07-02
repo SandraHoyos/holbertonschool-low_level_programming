@@ -14,6 +14,8 @@ mitad = (i - 1) / 2;
 else
 mitad = (i + 1) / 2;
 for (j = mitad; j <= i; j++)
+{
 putchar(str[j]);
+}
 putchar('\n'),
 }

@@ -13,7 +13,7 @@ char cadena[500];
 for (lon = 0; s[lon] != '\0'; lon++)
 {
 }
-for (i = lon ; i >= 0; i--)
+for (i = lon - 1 ; i >= 0; i--)
 {
 cadena[j] = s[i];
 j++;

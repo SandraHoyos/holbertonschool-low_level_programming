@@ -21,7 +21,7 @@ j++;
 for (i = 0; i <= lon; i++)
 {
 s[i] = cadena[i];
-putchar(s[i]);
+printf(s[i]);
 }
-putchar('\n');
+printf('\n');
 }

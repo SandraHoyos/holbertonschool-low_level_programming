@@ -13,12 +13,12 @@ char cadena[500];
 for (lon = 0; s[lon] != '\0'; lon++)
 {
 }
-for (i = lon - 1 ; i >= 0; i--)
+for (i = lon ; i >= 0; i--)
 {
-cadena[j] = s[i];
+cadena[j] = s[i-1];
 j++;
 }
-for (i = 0; i <= lon - 1; i++)
+for (i = 0; i <= lon; i++)
 {
 s[i] = cadena[i];
 putchar(s[i]);

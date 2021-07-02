@@ -16,10 +16,10 @@ for (lon = 0; s[lon] != '\0'; lon++)
 
 for (i = lon -1 ; i >= 0; i--)
 {
-cadena[j] = *s[i];
+cadena[j] = s[i];
 j++;
 }
-for (i = 0; i <= lon; i++)
+for (i = 0; i <= lon - 1; i++)
 {
 *s[i] = cadena[i];
 putchar(s[i]);

@@ -17,5 +17,5 @@ for (j = mitad; j <= i; j++)
 {
 putchar(str[j]);
 }
-putchar('\n'),
+putchar('\n');
 }

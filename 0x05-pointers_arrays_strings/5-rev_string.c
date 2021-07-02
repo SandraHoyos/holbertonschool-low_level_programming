@@ -24,4 +24,5 @@ for (i = 0; i <= lon; i++)
 s[i] = cadena[i];
 putchar(s[i]);
 }
+putchar('\n');
 }

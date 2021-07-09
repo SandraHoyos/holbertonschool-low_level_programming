@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * sqrt_prueba - Evalua de 1 -n 
+ * sqrt_prueba - Evalua de 1 -n
  * @a: mismo numero que n
  * @b: numero que itera de 1 a n
  *

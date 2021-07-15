@@ -9,24 +9,15 @@
  */
 int main(int argc, char *argv[])
 {
-int num1, num2;
-char *s1 = argv[1];
-char *s2 = argv[2];
-num1 = num2 = 0;
-
+int a, b, c;
 if (argc != 3)
 {
-printf("Error\n");
+puts("Error");
 return (1);
 }
-if (s1[0] == '-')
-num1 = -1 * atoi(&s1[1]);
-else
-num1 = atoi(&s1[0]);
-if (s2[0] == '-')
-num2 = -1 * atoi(&s2[1]);
-else
-num2 = atoi(&s2[0]);
-printf("%d \n", num2 * num1);
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+c = a * b;
+printf("%d\n", c);
 return (0);
 }

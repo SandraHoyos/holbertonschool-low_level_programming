@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-int num1, num2;
+int num1, num2, num3;
 char *s1 = argv[1];
 char *s2 = argv[2];
 num1 = num2 = 0;
@@ -27,6 +27,7 @@ if (s2[0] == '-')
 num2 = -1 * atoi(&s2[1]);
 else
 num2 = atoi(&s2[0]);
-printf("%d \n", num1 *num2);
+num3 = num1 *num2;
+printf("%d \n", num3);
 return (0);
 }

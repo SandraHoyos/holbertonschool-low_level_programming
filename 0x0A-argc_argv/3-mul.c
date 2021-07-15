@@ -27,7 +27,7 @@ if (s2[0] == '-')
 num2 = -1 * atoi(&s2[1]);
 else
 num2 = atoi(&s2[0]);
-num3 = num1 *num2;
+num3 = num1 * num2;
 printf("%d \n", num3);
 return (0);
 }

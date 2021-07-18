@@ -8,19 +8,19 @@
  *@c: character to assing
  *Return: pointer to Array, NULL if value is 0
 */
-
 char *create_array(unsigned int size, char c)
 {
 char *s;
-unsigned int i;
+unsigned int a;
 
-if (size <= 0)
+if (size == 0)
 return (NULL);
-s = (char *)malloc(size * sizeof(char));
+s = malloc(size * sizeof(*s));
 if (s == NULL)
 return (NULL);
-
-for (i = 0; i < size; i++)
-s[i] = c;
+for (a = 0; a < size; a++)
+{
+s[a] = c;
+}
 return (s);
 }

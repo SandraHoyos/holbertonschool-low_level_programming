@@ -16,7 +16,7 @@ return (NULL);
 for (i = 0; str[i] != '\0'; i++)
 ;
 i++;
-s = malloc((i) * (sizeof(*s)));
+s = malloc((i)*(sizeof(*s)));
 if (s == 0)
 return (NULL);
 for (j = 0; j < i; j++)

@@ -1,36 +1,40 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * str_concat - concatenate strings
- * @s1: string 1
- * @s2: string 2
- * Return: NULL if failure
+ * str_concat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ *
+ * Return: pointer to newly allocated space in memory, or NULL if error
  */
 char *str_concat(char *s1, char *s2)
 {
+unsigned int i, j, k, l;
 char *s;
-int a, b, c, d;
 
-if (s1 == 0)
-s1 = "";
-if (s2 == 0)
-s2 = "";
-for (a = 0; s1[a] != '\0'; a++)
-;
-for (b = 0; s2[b] != '\0'; b++)
-;
-b++;
-s = malloc(a *sizeof(*s1) + b *sizeof(*s2));
-if (s == 0)
-return (NULL);
-for (c = 0, d = 0; c < a + b; c++)
-{
-if (c < a)
-s[c] = s1[c];
+if (s1 == NULL)
+i = 0;
 else
-s[c] = s2[d++];
+{
+for (i = 0; s1[i]; i++)
+;
 }
+if (s2 == NULL)
+j = 0;
+else
+{
+for (j = 0; s2[j]; j++)
+;
+}
+k = i + j + 1;
+s = malloc(k * sizeof(char));
+if (s == NULL)
+return (NULL);
+for (l = 0; l < i; l++)
+s[l] = s1[l];
+for (l = 0; l < j; l++)
+s[l + i] = s2[l];
+s[i + j] = '\0';
 return (s);
 }

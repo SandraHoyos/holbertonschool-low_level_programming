@@ -31,9 +31,7 @@ if (p == 0)
 return (NULL);
 
 for (k = 0; k < i; k++)
-   
 p[k] = s1[k];
-
 for (l = 0; l < n && l < j; l++, k++)
 {
 p[k] = s2[l];

@@ -24,9 +24,11 @@ perro->name = malloc(namelen * sizeof(perro->name));
 if (perro == NULL)
 return (NULL);
 for (i = 0; i < namelen; i++)
+{
 perro->name[i] = name[i];
 perro->age = age;
-perro->owner = malloc(ownerlen * sizeof(perro->owner));
+}
+ perro->owner = malloc(ownerlen * sizeof(perro->owner));
 if (perro == NULL)
 return (NULL);
 for (i = 0; i < ownerlen; i++)

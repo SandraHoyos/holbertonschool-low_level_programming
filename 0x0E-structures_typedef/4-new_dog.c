@@ -31,6 +31,6 @@ perro->owner = malloc(ownerlen * sizeof(perro->owner));
 if (perro == NULL)
 return (NULL);
 for (i = 0; i < ownerlen; i++)
-perro->onwner[i] = owner[i];
+perro->owner[i] = owner[i];
 return (perro);
 }

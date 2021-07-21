@@ -1,52 +1,42 @@
 #include "dog.h"
-#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * new_dog - function that creates a new dog.
- * @name: character pointer
- * @owner: character pointer
- * @age: integer
- * Return: Always 0.
+ * new_dog - crea una estructura de tipo perro
+ * @name: Nombre
+ * @age: Edad
+ * @owner: Dueño
+ * Return: puntero al buffer de datatype dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-int i, b, c;
+int namelen = 0, ownerlen = 0, i = 0;
 dog_t *perro;
 
-for (i = 0; name[i] != '\0'; i++)
+while (name[namelen++])
 ;
-a++;
-for (j = 0; owner[j] != '\0'; j++)
+while (owner[ownerlen++])
 ;
-b++;
 perro = malloc(sizeof(dog_t));
-if (perro == 0)
-{
-free(perro);
+if (perro == NULL)
 return (NULL);
-}
-perro->name = malloc(i * sizeof(perro->name));
-if (perro->name == 0)
-{
+
+perro->name = malloc(namelen * sizeof(perro->name));
+if (perro == NULL)
 free(perro->name);
 free(perro);
 return (NULL);
-}
-for (k = 0; k < i; k++)
-perro->name[k] = name[k];
-perro->name[k] = name[k];
+for (i = 0; i < namelen; i++)
+{
+perro->name[i] = name[i];
 perro->age = age;
-perro->owner = malloc(j * sizeof(perro->owner));
-if (perro->owner == 0)
-{
-free(perro->owner);
+}
+perro->owner = malloc(ownerlen * sizeof(perro->owner));
+if (perro == NULL)
 free(perro->name);
+free(perro->owner); 
 free(perro);
 return (NULL);
-}
-for (k = 0; k < j; k++)
-perro->owner[k] = owner[k];
-perro->owner[k] = owner[k];
+for (i = 0; i < ownerlen; i++)
+perro->owner[i] = owner[i];
 return (perro);
 }

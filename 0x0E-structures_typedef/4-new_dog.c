@@ -20,20 +20,18 @@ perro = malloc(sizeof(dog_t));
 if (perro == NULL)
 return (NULL);
 
-perro->name = malloc(namelen * sizeof(perro->name));
+perro->name = malloc(namelen * sizeof(char));
 if (perro == NULL)
-free(perro->name);
+{
 free(perro);
 return (NULL);
+}
 for (i = 0; i < namelen; i++)
-{
 perro->name[i] = name[i];
 perro->age = age;
-}
-perro->owner = malloc(ownerlen * sizeof(perro->owner));
+
+perro->owner = malloc(ownerlen * sizeof(char));
 if (perro == NULL)
-free(perro->name);
-free(perro->owner); 
 free(perro);
 return (NULL);
 for (i = 0; i < ownerlen; i++)

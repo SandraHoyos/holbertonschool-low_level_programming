@@ -2,31 +2,27 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- *main - multiplica dos n+umero
- *@argc: números
- *@argv: Argumentos 
- *Return: 0
+ * main - Entry Point
+ * atoi is a function that converts a string into an int
+ * @argc: arguments
+ * @argv: array pointing to arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-int num1, num2;
-char *s1 = argv[1];
-char *s2 = argv[2];
-num1 = num2 = 0;
-
+int i, res = 1;
 if (argc != 3)
 {
-printf("Error\n");
+printf("%s\n", "Error");
 return (1);
 }
-if (s1[0] == '-')
-num1 = -1 * atoi(&s1[1]);
 else
-num1 = atoi(&s1[0]);
-if (s2[0] == '-')
-num2 = -1 * atoi(&s2[1]);
-else
-num2 = atoi(&s2[0]);
-printf("%d\n", num1 * num2);
+{
+for (i = 1; i < argc; i++)
+{
+res *= atoi(argv[i]);
+}
+printf("%d\n", res);
+}
 return (0);
 }

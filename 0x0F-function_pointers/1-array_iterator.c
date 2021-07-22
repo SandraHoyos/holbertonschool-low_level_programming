@@ -1,10 +1,10 @@
 #include <stdlib.h>
 /**
- * int_index - compara
+ * array_iterator - recorre arreglo
  *
  * @array: arreglo
- * @size_t: tamaño del arreglo
- * @cmp: puntero a la función
+ * @size: tamaño del arreglo
+ * @action: puntero
  *
  * Return: retur -1 on error or i on success
  */

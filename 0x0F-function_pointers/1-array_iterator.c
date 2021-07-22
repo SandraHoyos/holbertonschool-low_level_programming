@@ -3,26 +3,20 @@
  * int_index - compara
  *
  * @array: arreglo
- * @size: tamaño del arreglo
+ * @size_t: tamaño del arreglo
  * @cmp: puntero a la función
  *
  * Return: retur -1 on error or i on success
  */
-int int_index(int *array, int size, int (*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
-int i;
-if (array && cmp)
-{
-if (size <= 0)
-return (-1);
+size_t i;
 
-i = 0;
-while (i < size)
+if (array && action)
 {
-if (cmp(array[i]))
-return (i);
-i++;
+for (i = 0; i < size; i++)
+{
+action(array[i]);
 }
 }
-return (-1);
 }

@@ -18,7 +18,7 @@ return (a + b);
  */
 int op_sub(int a, int b)
 {
-return(a - b);
+return (a - b);
 }
 
 
@@ -30,27 +30,27 @@ return(a - b);
  */
 int op_mul(int a, int b)
 {
-return(a * b);
+return (a * b);
 }
 
 /**
- *op_div - divides two numbers 
+ *op_div - divides two numbers
  *@a: first number
  *@b: second number
  *Return: division of a and b
  */
 int op_div(int a, int b)
 {
-return(a / b);
+return (a / b);
 }
 
 /**
- *op_mod - divides two numbers, returns the remainder 
+ *op_mod - divides two numbers, returns the remainder
  *@a first number
-@b: secod number
-*Return: remaindes of the division
-*/
+ *@b: secod number
+ *Return: remaindes of the division
+ */
 int op_mod(int a, int b)
 {
-return(a % b); 
+return (a % b);
 }

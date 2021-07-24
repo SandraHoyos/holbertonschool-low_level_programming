@@ -19,7 +19,6 @@ va_start(lista, n);
 for (i = 0; i < n; i++)
 {
 cadena = va_arg(lista, char *);
-printf("%s", cadena);
 if (cadena)
 printf("%s", cadena);
 else

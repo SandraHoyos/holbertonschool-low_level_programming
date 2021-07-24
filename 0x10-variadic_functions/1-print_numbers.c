@@ -22,7 +22,7 @@ numero = va_arg(lista, int);
 printf("%i", numero);
 if (separator && i < n - 1)
 printf("%s", separator);
-} 
+}
 printf("\n");
 va_end(lista);
 }

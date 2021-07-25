@@ -48,7 +48,7 @@ return (a / b);
 
 /**
  *op_mod - divides two numbers, returns the remainder
- *@a first number
+ *@a: first number
  *@b: secod number
  *Return: remaindes of the division
  */
@@ -56,6 +56,7 @@ int op_mod(int a, int b)
 {
 if (b == 0)
 {
+printf("ERROR");
 return (100);
 }
 return (a % b);

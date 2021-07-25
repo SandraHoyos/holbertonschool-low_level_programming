@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include <stdlib.h>
+#include <string.h>
 
 /**
  * get_op_func - Select function based on the operator
@@ -8,7 +8,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-int i;
+int i = 0;
 op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
@@ -17,12 +17,11 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-i = 0;
-while (i < 5)
+while (ops[i].op != NULL)
 {
-if (*ops[i].op == *s && !(*(s + 1)))
-return (ops[i].f);
+if (strcmp(s, ops[i].op) == 0)
+break;
 i++;
 }
-return (NULL);
+return (ops[i].f);
 }

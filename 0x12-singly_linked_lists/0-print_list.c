@@ -18,6 +18,6 @@ contador++;
 }
 else
 printf("[0] (nil)\n");
-
-return (countador);
+}
+return (contador);
 }

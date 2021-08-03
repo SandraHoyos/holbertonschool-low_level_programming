@@ -14,6 +14,9 @@ return (NULL);
 }
 N_nodo = malloc(sizeof(listint_t));
 if (N_nodo == NULL)
+{
+return (NULL);
+}
 N_nodo->n = n;
 N_nodo->next = (*head);
 (*head) = N_nodo;

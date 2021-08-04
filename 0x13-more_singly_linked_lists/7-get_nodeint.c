@@ -1,23 +1,24 @@
 #include "lists.h"
 /**
- *pop_listint - function that returns the nth node
- *@head: pointer
- *Return:n
+ * get_nodeint_at_index - function to find nth node in a list
+ * @head: the pointer to the list
+ * @index: the node to find
+ * Return: n or null
  */
-#include "lists.h"
-
-int pop_listint(listint_t **head)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-pop_listintint n;
-listint_t *aux;
-
-if (*head == NULL || head == NULL)
+listint_t *find;
+unsigned int a = 0;
+if (head != NULL)
 {
-return (0);
+find = head;
+while (find != NULL)
+{
+if (a == index)
+return (find);
+find = find->next;
+a++;
 }
-n = (*head)->n;
-aux = *head;
-*head = (*head)->next;
-free(aux);
-return (n);
+}
+return (NULL);
 }

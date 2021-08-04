@@ -1,4 +1,4 @@
-t_index - function to insert a node in a list at given index
+#include "lists.h"
 /**
 * @head: pointer to the pointer to list
 * @idx: given index to insert node at

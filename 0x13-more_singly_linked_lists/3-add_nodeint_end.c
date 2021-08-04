@@ -2,7 +2,7 @@
 /**
  *add_nodeint_end - function adds a new node at the end of list.
  *@head: pointer
- *@End_nodo: pointer
+ *@n: constant
  *Return: h
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)

@@ -7,7 +7,7 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-const listint_t *new, *comp;
+const listint_t *nuevo, *comp;
 size_t count_nuevo = 0, count_comp = 0;
 
 nuevo = head;

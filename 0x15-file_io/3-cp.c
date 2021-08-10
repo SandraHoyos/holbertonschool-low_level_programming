@@ -19,7 +19,6 @@ int main(int argc, char **argv)
 	exit(0);
 }
 
-
 /**
  * copy_file - function that copy
  * @arg1: number of arguments passed

@@ -7,62 +7,66 @@
  *
  */
 
-int main(int argc, char **argv)
+#include "main.h"
+
+int main(int argc, char *argv[])
 {
+	/* debe recibir solamente 3 argumentos */
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO,"Usage: cp file_from file_to\n");
 		exit(97);
 	}
+	/*se llama la funcion y se pasan dos argumentos */
+	copy_file(argv[1],argv[2]);
 
-	copy_file(argv[1], argv[2]);
-	exit(0);
+	/retorno exitoso/
+		 exit(0);
 }
 
-/**
- * copy_file - function that copy
- * @arg1: number of arguments passed
- * @arg2: arguments being passed
- * Return: 98 read err, 99 write err, 100 close err, 0 sucess
- *
- */
-void copy_file(const char *arg1, const char *arg2)
+void copy_file(const char * origin, const char * copy)
 {
-	int op, cop, rd;
-	char buf[1024];
+	/* buffer para reducir los llamados al sistema */
+	char * buffer[1024];
 
-	op = open(arg1, O_RDONLY);
-	if (!arg1 || op == -1)
+	int op, rd;
+	int copys;
+
+	/* se define syscall open a archivo como solo lectura */
+	op = open(origin, O_RDONLY);
+
+	/* si no existe origin o no se puede leer genera error */
+	if (origin == NULL || op == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg1);
+	dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", origin);
+	exit(98);
+	}
+
+	/* definit syscall open a copia de archivo*/
+	copys = open(copy, O_CREAT | O_WRONLY | O_TRUNC , 664);
+
+	if (copy == NULL ||copys == -1)
+	{
+		dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", copy);
 		exit(98);
 	}
-	cop = open(arg2, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	while ((rd = read(op, buf, 1024)) > 0)
+	/*  */
+	while((rd = read(op, buffer, 1024)) != 0)
 	{
-		if (write(cop, buf, rd) != rd || cop == -1)
+		if (write(op, buffer, rd) == -1)
 		{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arg2);
+		dprintf(STDERR_FILENO,"Error: Can't write to %s\n", copy);
 		exit(99);
 		}
 	}
 
-	if (close(op) == -1)
-	{
-	dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", op);
-	exit(100);
-	}
-
-	if (close(cop) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", cop);
-		exit(100);
-	}
-
 	if (rd == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg1);
-	exit(98);
+
 	}
+
+	close (op);
+	close (copys);
+
 }

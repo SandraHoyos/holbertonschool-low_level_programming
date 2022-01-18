@@ -1,4 +1,7 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <search_algos.h>
+
 /**
 * linear_search - earches for a value in an array
 * @size: valuen in size_t with size

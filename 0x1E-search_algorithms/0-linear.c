@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <search_algos.h>
+#include "search_algos.h"
 
 /**
 * linear_search - earches for a value in an array
@@ -12,7 +12,7 @@
 */
 int linear_search(int *array, size_t size, int value)
 {
-	size_t i = 0;
+	size_t i;
 
 	if (!array || size == 0)
 		return (-1);
